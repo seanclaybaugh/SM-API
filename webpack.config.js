@@ -12,6 +12,7 @@ module.exports = {
     // the filename of the JS bundle will be bundle.js
     filename: 'bundle.js'
   },
+  devtool:'eval-source-map',
   module: {
     rules: [
       {
