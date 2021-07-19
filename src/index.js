@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 import Login from './components/login.js'
+import Search from './components/Search.js'
+
 
 const Container = styled.div`
 position:fixed;
@@ -15,15 +17,14 @@ color: white;
 `
 
 function App () {
-  
-  const [login, setLogin] = useState(false);
+
+
 
   return (
 
-  <Container>Hello Luke
+  <Container> Hello Luke
 
-    {!login && <Login login={login} setLogin={setLogin} />}
-
+   <Search />
   </Container>
   )
 }
